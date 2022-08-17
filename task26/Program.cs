@@ -4,3 +4,13 @@
 // 89126 -> 5
 
 // Не используем в решении задачи строки и ее свойства
+
+
+ Console.WriteLine("Введите число");
+ int number = Convert.ToInt32(Console.ReadLine());
+ int count ;
+ for (count = 0; number >0; count++)
+ {
+     number /= 10;
+ }
+Console.WriteLine(count);
