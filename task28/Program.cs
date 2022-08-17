@@ -3,13 +3,31 @@
 // 4 -> 24
 // 5 -> 120
 
+// Console.WriteLine("Введите число N: ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// int res = 1;
+// int i;
+
+// for (i = 1; i <= N; i++)
+// {
+//     res = res * i;
+// }
+// Console.WriteLine(res);
+
+
 Console.WriteLine("Введите число N: ");
 int N = Convert.ToInt32(Console.ReadLine());
-int res = 1;
-int i;
+int fact = 1;
 
-for (i = 1; i <= N; i++)
+if ( N>=1 )
 {
-    res = res * i;
+    for (int i = 1; i<=N; i++)
+    {
+        fact = fact * i;
+    }
+    Console.WriteLine(fact);
 }
-Console.WriteLine(res);
+else
+{
+    Console.WriteLine("Введено некорректное число");
+}
